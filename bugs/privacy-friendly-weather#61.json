@@ -1,0 +1,8 @@
+{
+    "apk_name": "privacy-friendly-weather_v2.0.apk",
+    "url": "https://github.com/SecUSo/privacy-friendly-weather/issues/61",
+    "repo": "privacy-friendly-weather",
+    "title": "Weather (Privacy Friendly) App crash, when rotate 'The First Location' screen from portrait to landscape ",
+    "body": "\n#### Expected behavior\nIf app supports landscape orientation, then app needs to manage it's layout when user rotates screen from portrait to landscape or landscape to portrait.\n\n#### Actual behavior\nI run app and came to 'The First Location' screen, where app asking me my first location. Now on the 'The First Location' screen, i rotate my screen from portrait to landscape and app got crashed. Other screens works fine in both orientation just this screen leading app to crash.\n\n#### How to reproduce\nTo reproduce the bug, follow the following steps :-\n- Download a fresh copy of app from play store.\n- Now open app and slide next from welcome screen to add first location screen. Don't press skip button.\n- After coming to add first location screen, just rotate device screen from portrait to landscape.\n- The app crashed.\n\n<pre><code>\n* Device:  Samsung J7 Prime\n* Operating system: Android 7.0 Nougatt\n* App Version: v2.0\n</code></pre>\n\n#### Recording Of The Bug\nhttps://www.youtube.com/watch?v=j8DjQi2z9g4\n    \n\n<br /><hr/><em>Posted on <a href=\"https://utopian.io/utopian-io/@iamankit/weather-privacy-friendly-app-crash-when-rotate-the-first-location-screen-from-portrait-to-landscape\">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/>",
+    "comments": []
+}

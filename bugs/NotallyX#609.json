@@ -1,0 +1,10 @@
+{
+    "apk_name": "NotallyX_v7.4.0.apk",
+    "url": "https://github.com/PhilKes/NotallyX/issues/609",
+    "repo": "NotallyX",
+    "title": "Export of notes as text or PDF not working",
+    "body": "### What happened?\n\nI tried to export my notes as text files and PDFs. This first created an empty  individual file per note and then the app crashed.\n\n### App Version\n\n7.4.0\n\n### Android Version (API Level)\n\n35\n\n### (Optional) Relevant log output\n\n```shell\njava.lang.IllegalArgumentException: name cannot be empty\n\tat android.print.PrintDocumentInfo$Builder.<init>(PrintDocumentInfo.java:313)\n\tat WV.A7.onLayout(chromium-SystemWebView.apk-default-704910001:7)\n\tat android.print.PdfExtensionsKt$printPdf$1.onPageFinished(SourceFile:90)\n\tat WV.WL.b(chromium-SystemWebView.apk-default-704910001:12)\n\tat WV.Y5.handleMessage(chromium-SystemWebView.apk-default-704910001:278)\n\tat android.os.Handler.dispatchMessage(Handler.java:109)\n\tat android.os.Looper.loopOnce(Looper.java:232)\n\tat android.os.Looper.loop(Looper.java:317)\n\tat android.app.ActivityThread.main(ActivityThread.java:8934)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:591)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:911)\n```",
+    "comments": [
+        "Issue apparently fixed in current version."
+    ]
+}

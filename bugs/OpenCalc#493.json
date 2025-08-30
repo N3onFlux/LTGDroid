@@ -1,0 +1,10 @@
+{
+    "apk_name": "OpenCalc_v3.1.0-beta1.apk",
+    "url": "https://github.com/clementwzk/OpenCalc/issues/493",
+    "repo": "OpenCalc",
+    "title": "Crash from Square Root of Power",
+    "body": "**Describe the bug**\r\nCertain large exponents cause a crash like:\r\nsqrt(2^(1,024)\r\n\r\n\r\n**Screenshots/videos**\r\nOne higher than this:\r\n![Screenshot_20241002_144037_Calculator](https://github.com/user-attachments/assets/cd5ba8bc-36ae-4d50-aff0-e791b138a5eb)\r\n\r\n\r\n**Smartphone (please complete the following information):**\r\n - Device: Samsung Galaxy S22\r\n - OS: Android 14 OneUI 6.1\r\n - App version 3.0.1-beta1\r\n - Language: English\r\n\r\n",
+    "comments": [
+        "Great Work!"
+    ]
+}

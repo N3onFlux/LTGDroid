@@ -1,0 +1,12 @@
+{
+    "apk_name": "uhabits_v2.2.0.apk",
+    "url": "https://github.com/iSoron/uhabits/issues/2112",
+    "repo": "uhabits",
+    "title": "Too long text is not handled properly",
+    "body": "<!--\nPlease use the template below for your bug report. Issues that do not follow this\ntemplate, or that do not contain all necessary information (namely, description of\nthe problem, steps to reproduce, phone, phone operating system, and app version)\nwill be closed without further consideration.\n-->\n\n## Pre-submission checklist\n- [x] I am submitting a bug report, not a feature request.\n- [x] I have searched for similar issues, but did not find any matches.\n\n## Description\nSee the images below. Either not allow the user to enter a name/number that's too long, or somehow make it display properly...\n\n## Steps to reproduce\n1. Make a new habit or edit an existing one.\n2. Type a looong unit name.\n3. See how they overlap.\n\n## System information\n - Phone: POCO F5 Pro.\n - Phone Operating System: Android 13.\n - App version: 2.2.0.\n\n## Screenshots\nToo much blank space and the other info are off screen:\n![Image](https://github.com/user-attachments/assets/3aa6458f-e4d3-45dd-916f-80aa2e1013b5)\n\nUnits overlapping:\n![Image](https://github.com/user-attachments/assets/807eb8ec-a3f6-4dfe-b171-f6bc1e9ca0e3)\n\n\"Off\" is written vertically:\n![Image](https://github.com/user-attachments/assets/d012e3e6-51fa-48f2-a048-ecea44291ec4)\n\nNo numbers are shown on this widget if they're too large:\n![Image](https://github.com/user-attachments/assets/fe1a90ed-033f-491d-9098-5f68e035421e)\n\nHabit names are displayed *correctly*:\n![Image](https://github.com/user-attachments/assets/8b651336-a75c-4b37-8dee-aae910681d5c)",
+    "comments": [
+        "I guess we could prevent the user from entering a very long name, but I'm also not sure that's worth fixing. The user can realize this for themselves and adjust accordingly.",
+        "Sure, but it makes the app feel a bit less \"professional\".",
+        "Fixed in e608c6ea623a9bc4483fe502952d00d9faf92f26"
+    ]
+}

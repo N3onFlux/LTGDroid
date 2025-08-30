@@ -1,0 +1,11 @@
+{
+    "apk_name": "qksms_v2.7.1.apk",
+    "url": "https://github.com/moezbhatti/qksms/issues/585",
+    "repo": "qksms",
+    "title": "Crash when backPress from SettingsActivity after Orientation changed",
+    "body": "### DESCRIPTION\n\nQKSMS crashes when pressing Back button from Settings Activity after Orientation change.\nThis bug happens both in version on Google Play and built from Github.\nIt only happens when rotating screen in Category (Appearance, General, Notifications, MMS, QK Reply, etc. ) of Settings.\n### STEPS\n1. Start QKSMS\n2. Go to Settings by clicking on the OptionMenu -> Settings\n3. Click on one Category in the list\n4. When you are in the Category (for example, **General**), rotate the screen\n5. After screen rotation, it will return to main Settings screen automatically (which is also not good)\n6. Click on Back button\n### EXPECTED\n\nReturn to the Conversations Activity which contains the conversation list.\n### OBSERVATIONS\n\nCrashes.\n### Logcat from Android Studio\n\n```\nFATAL EXCEPTION: main\nProcess: com.moez.QKSMS, PID: 22003\njava.lang.IllegalStateException: Fragment already added: SettingsFragment{1d41d5f0 #0 id=0x7f0e0085 SettingsFragment}\nat android.app.FragmentManagerImpl.addFragment(FragmentManager.java:1153)\nat android.app.BackStackRecord.popFromBackStack(BackStackRecord.java:1547)\n```\n",
+    "comments": [
+        "I create a patch which corrects this issue (also the bad behavior : After screen rotation, it will return to main Settings screen automatically).\n\nPlease try it and decide what to do about this issue. Maybe you can come out with a better solution.\n\nThank you very much. I love QKSMS. It is great!\n\nPS: Github does not permit to attach patch file, so I rename it with addition of \".txt\" in the end.\n\n[0001-Fix-crash-when-backPress-from-SettingsActivity-after.patch.txt](https://github.com/moezbhatti/qksms/files/410957/0001-Fix-crash-when-backPress-from-SettingsActivity-after.patch.txt)\n",
+        "Good sharing！thanks!"
+    ]
+}

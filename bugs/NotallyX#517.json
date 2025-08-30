@@ -1,0 +1,8 @@
+{
+    "apk_name": "NotallyX_v7.3.0.apk",
+    "url": "https://github.com/PhilKes/NotallyX/issues/517",
+    "repo": "NotallyX",
+    "title": "app crashes when pressing label",
+    "body": "### What happened?\n\nA bug happened!\n\nI created a label and when pressing it it crashes the app\n\n### App Version\n\n7.3.0\n\n### Android Version (API Level)\n\n36\n\n### (Optional) Relevant log output\n\n```shell\njava.lang.NullPointerException\n\tat androidx.navigation.ui.ActionBarOnDestinationChangedListener.onDestinationChanged(SourceFile:145)\n\tat androidx.navigation.NavHostController.dispatchOnDestinationChanged(SourceFile:108)\n\tat androidx.navigation.NavHostController.navigate(SourceFile:112)\n\tat androidx.navigation.NavHostController.navigate(SourceFile:25)\n\tat com.philkes.notallyx.presentation.view.main.label.LabelVH$$ExternalSyntheticLambda0.onClick(SourceFile:323)\n\tat android.view.View.performClick(View.java:8083)\n\tat android.view.View.performClickInternal(View.java:8060)\n\tat android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)\n\tat android.view.View$PerformClick.run(View.java:31532)\n\tat android.os.Handler.handleCallback(Handler.java:995)\n\tat android.os.Handler.dispatchMessage(Handler.java:103)\n\tat android.os.Looper.loopOnce(Looper.java:248)\n\tat android.os.Looper.loop(Looper.java:338)\n\tat android.app.ActivityThread.main(ActivityThread.java:8982)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)\n```",
+    "comments": []
+}

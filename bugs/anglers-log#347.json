@@ -1,0 +1,8 @@
+{
+    "apk_name": "anglers-log_v1.3.1.apk",
+    "url": "https://github.com/cohenadair/anglers-log/issues/347",
+    "repo": "anglers-log",
+    "title": "Can't edit dates for a Trip",
+    "body": "**Reproduction Steps**\r\n* Create Trip\r\n* Edit Trip\r\n* Modify date\r\n* Press Save\r\n* Observe error",
+    "comments": []
+}

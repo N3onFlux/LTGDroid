@@ -1,0 +1,8 @@
+{
+    "apk_name": "anglers-log_v1.2.5.apk",
+    "url": "https://github.com/cohenadair/anglers-log/issues/151",
+    "repo": "anglers-log",
+    "title": "Issue manually entering fishing spot coordinates",
+    "body": "### Problem\n\nIf the \"sync\" icon isn't clicked after manually entering coordinates, the fishing spot's coordinates aren't updated accordingly.\n### Reproduction steps\n1. Create a new, or edit an existing location\n2. Add fishing spot\n3. Manually enter coordinates (do _not_ click the sync button)\n4. Save\n5. In the edit location screen the coordinates are not correct\n### Solution\n\nThe add fishing spot screen should get and validate its coordinates from the `TextView` widgets, not the middle of the map.  If the coordinates are invalid, the user should see a dialog (this may already be implemented).\n",
+    "comments": []
+}

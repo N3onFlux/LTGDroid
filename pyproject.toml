@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ltgdroid"
+version = "0.1.0"
+description = ""
+authors = ["LTGDroid <LTGDroid@anonymous.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+websockets = "^15.0.1"
+loguru = "^0.7.3"
+json-repair = "^0.46.2"
+uiautomator2 = "^3.3.3"
+pillow = "^11.2.1"
+openai = "^1.85.0"
+anytree = "^2.13.0"
+networkx = "^3.5"
+fastapi = "^0.115.13"
+uvicorn = {extras = ["standard"], version = "^0.34.3"}
+apkutils = "2.0.0"
+requests = "^2.32.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+{
+    "apk_name": "thunderbird-android_v5.403.apk",
+    "url": "https://github.com/thunderbird/thunderbird-android/issues/3255",
+    "repo": "thunderbird-android",
+    "title": "Crashes with invalid format email address",
+    "body": "### Expected behavior\r\nI want to use an internal email adress like \"foo@b.2\". We use some custom software on our own servers only for internal communication. **It works in Thunderbird.**\r\n\r\n### Actual behavior\r\n(All messages and texts are in german on my device; I don't know the texts if you use K9 in english. I just tried to translate them)\r\nIf I try to add a new email account to K9-Mail (Enter email and password) and tap on one of the two buttons (\"Manually\" or \"Continue\") the app will crash with only the message \"K-9 Mail has stopped\" \r\n\r\n### Steps to reproduce\r\n1. Open K-9 Mail\r\n2. Add new email account with \"foo@b.2\"\r\n3. Press \"Manually\" or \"Continue\"\r\n4. Crash\r\n\r\n### Environment\r\nK-9 Mail version: 5.403\r\n\r\nAndroid version: 6.0.1\r\n\r\nAccount type (IMAP, POP3, WebDAV/Exchange): I WANT to use IMAP, but I haven't tried yet, because of the crash.\r\n",
+    "comments": [
+        "`.2` is invalid and will never be valid as far as I understand IDNs application to TLDs.\r\n\r\nI don't see value in K-9 supporting the defederation of email like this. I also don't see Thunderbird on its own as a good enough reason to ignore that. I suspect Thunderbird is lack of validation not choice to support this. So it's not a feature to have parity with, more exploitation  of a design flaw.\n\nBut we shouldn't crash.",
+        "We use Java's `URI` class for `storeUri`. Temporarily we set the hostname part to \"mail.b.2\" which the `URI` class doesn't like. For hostnames it only accepts the following format (minus the trailing dot):\r\n\r\n```java\r\n// hostname      = domainlabel [ \".\" ] | 1*( domainlabel \".\" ) toplabel [ \".\" ]\r\n// domainlabel   = alphanum | alphanum *( alphanum | \"-\" | \"_\" ) alphanum\r\n// toplabel      = alpha | alpha *( alphanum | \"-\" | \"_\" ) alphanum\r\n```\r\nWe should change `EmailAddressValidator.EMAIL_ADDRESS_PATTERN` to only accept such hostnames."
+    ]
+}

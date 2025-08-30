@@ -1,0 +1,11 @@
+{
+    "apk_name": "privacy-friendly-todo-list_v3.1.0.apk",
+    "url": "https://github.com/SecUSo/privacy-friendly-todo-list/issues/158",
+    "repo": "privacy-friendly-todo-list",
+    "title": "[Bug] Settings Entry Mistakenly Treated as TO-DO List After Deleting Last TO-DO",
+    "body": "**Bug Description**  \nAfter deleting the last TO-DO list, the Settings entry is mistakenly recognized as a TO-DO list. The TO-DO list action menu appears for the Settings entry, and performing any operation on it results in an error log.  \n\n**To Reproduce**  \nSteps to reproduce the behavior:  \n1. Create only one TO-DO list.\n2. Delete the last remaining TO-DO list.  \n3. Open the navigation menu and observe that the Settings entry is incorrectly treated as a TO-DO list.  \n4. Attempt any action related to TO-DO lists.  \n5. Check the error logcat.  \n\n**Expected Behavior**  \nThe Settings entry should not be recognized as a TO-DO list, and no TO-DO list actions should be available for it.  \n\n**Screen Recording**  \nhttps://github.com/user-attachments/assets/ae005936-1cf3-4d32-83d1-4384de95f77d\n\n**Smartphone:**  \n- Device: generic_x86_64 (Android Studio x86 emulator)  \n- OS: Android 12\n\n**Error Log**  \n```\n03-06 05:52:40.676  3172  3172 E PFA MainActivity: Todo list with ID 1 not found.  \n03-06 05:53:21.516  3172  3172 E PFA MainActivity: Todo list with ID 1 not found.  \n```",
+    "comments": [
+        "Hello @yxXXxy999 , thanks for the tip. I was able to reproduce it and will fix it.",
+        "Unfortunately I was not able to fix it but found a workaround. It seems to be a bug in the GUI framework. But the user should no longer see the wrong behavior.\nThe workaround will be part of the upcoming release."
+    ]
+}

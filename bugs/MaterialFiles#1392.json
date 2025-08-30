@@ -1,0 +1,10 @@
+{
+    "apk_name": "MaterialFiles_v1.7.4.apk",
+    "url": "https://github.com/zhanghai/MaterialFiles/issues/1392",
+    "repo": "MaterialFiles",
+    "title": "[Bug]: File list does not refresh automatically after granting storage permission",
+    "body": "**Describe the bug**  \nAfter granting storage permission for the first time, the file manager does not automatically refresh the file list after file creation or deletion operations. \n\nAfter the user navigates to another folder, everything returns to normal.\n\n**To Reproduce**  \nSteps to reproduce the behavior:\n1. Open the app and grant storage permissions when prompted.\n2. Perform a file creation or deletion operation.\n3. The file list does not update.\n\n**Screen recording**\nhttps://github.com/user-attachments/assets/ae3fc1af-da21-4a4c-8abe-0b2d71707ab0\n\n**Expected behavior**  \nThe file list should automatically refresh and reflect any creation or deletion operations all the time.\n\n**Device Information**:  \n- Device: generic_x86_64 (Android Studio x86 emulator)  \n- OS: Android 9  \n",
+    "comments": [
+        "This is probably due to the file observer not being re-registered after the permission is granted."
+    ]
+}

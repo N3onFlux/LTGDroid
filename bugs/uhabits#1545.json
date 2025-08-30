@@ -1,0 +1,11 @@
+{
+    "apk_name": "uhabits_v2.1.1.apk",
+    "url": "https://github.com/iSoron/uhabits/issues/1545",
+    "repo": "uhabits",
+    "title": "App crashes when re-opening \"habit completion status dialog\" after rotating screen with that dialog open",
+    "body": "<!--\r\nPlease use the template below for your bug report. Issues that do not follow this\r\ntemplate, or that do not contain all necessary information (namely, description of\r\nthe problem, steps to reproduce, phone, phone operating system, and app version)\r\nwill be closed without further consideration.\r\n-->\r\n\r\n## Pre-submission checklist\r\n- [x] I am submitting a bug report, not a feature request.\r\n- [x] I have searched for similar issues, but did not find any matches.\r\n\r\n## Description\r\nIf user does not close \"habit completion status dialog\" and rotates device, the dialog disappears, and if user tries to open that dialog again (for any habit), the app crashes.\r\nNote: It does not matter how many times the screen is rotated as long as as the \"habit completion status dialog\" disappeared once as a result of switching app from portrait to horizontal mode or the other way around (and it does disappear every time).\r\n\r\n## Steps to reproduce\r\n1. Go to main view\r\n2. Click on any \"habit completion checkbox\" (habit completion status dialog shows up)\r\n3. Rotate screen (habit completion status dialog disappears)\r\n4. Click on any \"habit completion checkbox\"\r\n5. Application crashes\r\n\r\n## System information\r\n - Phone: Redmi Note 9\r\n - Phone Operating System: Android 10\r\n - App version: 2.1.1\r\n\r\n## Screenshots\r\nSo called \"habit completion status dialog\": ![Habit completion status dialog](https://i.imgur.com/BvctpMN.jpeg)\r\n",
+    "comments": [
+        "Thank you for the bug report, @RadCraftplay. I was able to reproduce it.",
+        "Fixed in 2ba5f5f"
+    ]
+}

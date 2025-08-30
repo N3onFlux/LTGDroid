@@ -1,0 +1,10 @@
+{
+    "apk_name": "Anki-Android_v2.8.2.apk",
+    "url": "https://github.com/ankidroid/Anki-Android/issues/4586",
+    "repo": "Anki-Android",
+    "title": "Crash on add picture from camera on Android 7",
+    "body": "Seems like a similar permissions issue to the crash when emailing apkgs that I recently fixed\r\n\r\n```\r\nandroid.os.FileUriExposedException: file:///storage/emulated/0/Pictures/img_201702162214361518016482.jpg exposed beyond app through ClipData.Item.getUri()\r\n```",
+    "comments": [
+        "I have same issue with both versions v2.8.2 and v2.9alpha4.\r\n\r\nSteps to reproduce\r\n1. Press on + and choose Add card\r\n2. Press on attach and choose Add image\r\n3. Select Camera\r\n\r\nHere is my debug info:\r\nAnkiDroid Version = 2.9alpha4\r\n\r\nAndroid Version = 7.0\r\n\r\nACRA UUID = 7b59c410-9be8-4f99-8be1-0b634cca407f\r\n"
+    ]
+}

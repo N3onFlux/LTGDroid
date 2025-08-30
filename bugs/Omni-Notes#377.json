@@ -1,0 +1,8 @@
+{
+    "apk_name": "Omni-Notes_v5.4.0.apk",
+    "url": "https://github.com/federicoiosue/Omni-Notes/issues/377",
+    "repo": "Omni-Notes",
+    "title": "Crash when adding reminder to a note",
+    "body": "### Reporter\nOmni Notes Runner\n\n### App Version Under Test\nName from APK: Omni Notes\nVersion from APK: 5.4.0\nVersion code: 234\nYour version name: 5.4.0 Play\nPackage: it.feio.android.omninotes\nUploaded: June 12, 2017 — 11:39 PM\nTestObject ID: 9\n\n### Device\nName: HTC One M9\nAndroid version: 6.0\nAPI level: 23\nResolution: 1080 x 1920 (xxhdpi)\nScreen size: 5.0\"\nCPU: ARM | octa core | 1800 MHz\nRAM: 3072 MB\nInternal storage: 32768 MB\nModel number: M9\nDetailed specification: http://www.gsmarena.com/results.php3?sName=M9\nTestObject ID: HTC_One_M9_real\nTestObject Manual Testing: https://app.testobject.com/#/fiosue/omni-notes/manual/viewer?device=HTC_One_M9_real\n\n### Issue on TestObject\nhttps://app.testobject.com/#/fiosue/omni-notes/issues/2",
+    "comments": []
+}

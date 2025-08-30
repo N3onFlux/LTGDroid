@@ -1,0 +1,15 @@
+{
+    "apk_name": "Anki-Android_v2.9.1.apk",
+    "url": "https://github.com/ankidroid/Anki-Android/issues/5638",
+    "repo": "Anki-Android",
+    "title": "crash caused by backslash",
+    "body": "###### Reproduction Steps\r\n\r\n1. Enter the following 6 characters of text in any card field: `&bsol;`\r\n2. Save the card. Anki crashes.\r\n3. Reopen Anki.\r\n4. Open the card browser. Anki crashes again, as soon as it attempts to display the card text.\r\n\r\n###### Expected Result\r\n\r\nAnki should display the literal text in the card browser, and a backslash symbol when reviewing the card.\r\n\r\n###### Actual Result\r\n\r\nAnki crashes every time it reads the card info. This makes it impossible to edit the card to fix the problem. To remove the corrupt card, the current database has to be overwritten with a backup.\r\n\r\nI didn't try other backslash codes (https://www.toptal.com/designers/htmlarrows/punctuation/backslash/), but they may produce the same effect.\r\n\r\n###### Debug info\r\n\r\nAnkiDroid version 2.9.1 on Android 10 on Pixel 3.\r\n\r\n###### Research\r\n\r\n[ x ] I have read the [support page](https://ankidroid.org/docs/help.html) and am reporting a bug or enhancement request specific to AnkiDroid\r\n\r\n[ x ] I have checked the [manual](https://ankidroid.org/docs/manual.html) and the [FAQ](https://github.com/ankidroid/Anki-Android/wiki/FAQ) and could not find a solution to my issue\r\n\r\n[ x ] I have searched for similar existing issues here and on the user forum\r\n",
+    "comments": [
+        "Well that's not expected! Nice catch and thanks for reporting it. I do not think this will affect your issue in any way, but in prep for a fix you might join the alpha group both to verify it is still reproducible from most current code, and to have access to the next future build that would fix it https://docs.ankidroid.org/manual.html#betaTesting",
+        "Other backslash symbo start with '&' also show this question. \\&bsol;,\\&#x5c;\\&#92;",
+        "Other backslash symbol also show this question.\r\n&bsol,&#x5c;&#92\r\nHow about simply add code below to com.ichi2.libanki.Utils.java:entsToTxt()?\r\n```\r\n        html = html.replace(\"&bsol;\", \"\\\\\");\r\n        html = html.replace(\"&#x5c;\", \"\\\\\");\r\n        html = html.replace(\"&#92;\", \"\\\\\");\r\n```",
+        "@chenminken that might very well be the solution - and thanks for testing out other combos so any future fix is more thorough. If you could make a PR here with that fix it would help us a lot in getting it done - we're pretty lean on developer power right now, and especially with the holidays\r\n\r\nwe have a guide that steps through how to get development going for AnkiDroid and I can help shepherd the PR through https://github.com/ankidroid/Anki-Android/wiki/Development-Guide\r\n\r\nI won't have time to get to it personally (even though yes, it is small) for a couple weeks at minimum because of guests over the holidays",
+        "I've looked into this issue and fixed it in PR #5670.",
+        "@pablode champion! I'll look at that and try to get it to release quickly\r\n\r\n"
+    ]
+}

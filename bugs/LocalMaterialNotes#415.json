@@ -1,0 +1,8 @@
+{
+    "apk_name": "LocalMaterialNotes_v1.12.1arm64.apk",
+    "url": "https://github.com/maelchiotti/LocalMaterialNotes/issues/415",
+    "repo": "LocalMaterialNotes",
+    "title": "[Bug]: Deleted labels Still Visible in Notes",
+    "body": "**Bug Description**  \nWhen managing labels, if a label is deleted, it still appears in notes that originally had that label.\n\n**To Reproduce**  \nSteps to reproduce the behavior:\n1. Create a new label \"a\".\n2. Create a new note \"123\" and add label \"a\".\n3. Go to the label management screen and delete label \"a\".\n4. Return to the note list and open note \"123\". label \"a\" is still visible, but clicking on it shows an error saying the label does not exist.\n\n**Expected Behavior**  \nAfter deleting a label, it should no longer be visible on any notes that had it.\n\n**Screen Recording**  \nhttps://github.com/user-attachments/assets/ca3ad339-8b33-45e2-9c0a-da71deca821f\n\n**Smartphone**  \n- Device: generic_x86_64 (Android Studio x86 emulator)  \n- OS: Android 9  \n\nI look forward to your feedback and hope this can be addressed soon. Thank you for your attention to this matter!",
+    "comments": []
+}

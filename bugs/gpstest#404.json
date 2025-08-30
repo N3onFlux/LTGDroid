@@ -1,0 +1,12 @@
+{
+    "apk_name": "gpstest_v3.6.4.apk",
+    "url": "https://github.com/barbeau/gpstest/issues/404",
+    "repo": "gpstest",
+    "title": "Logging resets on a portrait/landscape mode change",
+    "body": "**Summary:** \r\n\r\nA new log file is created on each portrait/landscape mode change\r\n\r\n**Steps to reproduce:** \r\n\r\n- Launch app with file logging enabled. Go into \"Accuracy\" view. \r\n- Change from portrait to landscape\r\n- An information bubble states a new logging file is created\r\n\r\n**Expected behavior:** \r\n\r\nNo new logging file on portrait/lanscape change\r\n\r\n**Observed behavior:** \r\n\r\n\r\n**Device and Android version:** \r\n\r\nPixel 4 device with latest 5th mai security update on an Android 10.\r\nThere is no Google Play Services app in my app lists :(  I guess they renamed it but could not find to what. So I cannot show the version.\r\n\r\n**Screenshots:** \r\n\r\n![Screenshot_20200507-090612](https://user-images.githubusercontent.com/11424837/81265489-79451300-9043-11ea-82da-a992911f98c8.png)\r\n",
+    "comments": [
+        "@Fuzl Thanks for reporting this! I'll take a look.",
+        "Work-in-progress PR at https://github.com/barbeau/gpstest/pull/405.",
+        "Looking at the master branch and latest release v3.8.4, logs are overwritten on a Samsung Galaxy S8+ w/ Android 9 instead of being appended to. Re-opening..."
+    ]
+}

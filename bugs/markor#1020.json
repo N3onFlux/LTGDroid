@@ -1,0 +1,8 @@
+{
+    "apk_name": "markor_v2.3.2.apk",
+    "url": "https://github.com/gsantner/markor/issues/1020",
+    "repo": "markor",
+    "title": "New file dialogue always says Type: Markdown rather than previous type used",
+    "body": "Steps to reproduce:\n1. Create a new file, change type to e.g. todo.txt, save it\n2. Create another new file\n3. Observe the dialogue correctly remembers .todo.txt as the previously used file extension, but below that it says Type: Markdown\n\n![](https://i.imgur.com/VjoVfZf.png)\n\nThis appears to be a cosmetic issue only - the second new file *is* named something.todo.txt, so the app is correctly remembering the user's last settings, but nonetheless it looks odd and confusing to the user.\n\nIt also makes it harder when you *want* to make a Markdown file as you have to choose something other than Markdown then choose Markdown again before the file extension will change to .md.\n \nVersion 2.3.2 from F-Droid. ",
+    "comments": []
+}

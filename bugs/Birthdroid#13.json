@@ -1,0 +1,10 @@
+{
+    "apk_name": "Birthdroid_v0.6.3.apk",
+    "url": "https://github.com/rigid/Birthdroid/issues/13",
+    "repo": "Birthdroid",
+    "title": "Setting “Foresight Period” with any integer greater than 10 digits crashes application",
+    "body": "set foresight period value as  any 11 digit number crashed the application\nsay \"111111111111\"\n",
+    "comments": [
+        "duplicate of #12 (pull requests welcome ;)\n"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "apk_name": "gnucash-android_v2.1.5.apk",
+    "url": "https://github.com/codinguser/gnucash-android/issues/664",
+    "repo": "gnucash-android",
+    "title": "Device rotation causes crash",
+    "body": "#### Steps to reproduce the behaviour\r\n1. Open any accounts/transactions view\r\n2. Rotate the device\r\n\r\n#### Expected behaviour\r\n3. The list of accounts should be rotated\r\n\r\n#### Actual behaviour\r\n3. The app crashes\r\n\r\n\r\n#### Software specifications\r\n* GnuCash Android version: 6.0.1\r\n* System Android version: 2.1.5\r\n* Device type: Nexus 5\r\n",
+    "comments": []
+}

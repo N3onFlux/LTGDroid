@@ -1,0 +1,10 @@
+{
+    "apk_name": "thunderbird-android_v5.502.apk",
+    "url": "https://github.com/thunderbird/thunderbird-android/issues/3971",
+    "repo": "thunderbird-android",
+    "title": "App Closes On Pressing Back Button In Manual Setup ",
+    "body": "Please search to check for an existing issue (including closed issues, for which the fix may not have yet been released) before opening a new issue: https://github.com/k9mail/k-9/issues?q=is%3Aissue\r\n\r\n### Expected behavior\r\nApp should go back to the previous page.\r\n\r\n### Actual behavior\r\nApp closes.\r\n\r\n### Steps to reproduce\r\n1. While creating new account, click on Manual setup\r\n2. Press back Button\r\n3. App closes\r\n\r\n### Environment\r\nAndroid version:\r\nAPI 24\r\n\r\n### GIF:\r\n<img src=\"https://user-images.githubusercontent.com/36811908/54494733-3f74f280-48ff-11e9-8f64-3d70384d230a.gif\" height=\"700\" width=\"394\">",
+    "comments": [
+        "@cketti Please assign me this."
+    ]
+}

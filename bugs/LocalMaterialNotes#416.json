@@ -1,0 +1,10 @@
+{
+    "apk_name": "LocalMaterialNotes_v2.0.0-dev1arm64.apk",
+    "url": "https://github.com/maelchiotti/LocalMaterialNotes/issues/416",
+    "repo": "LocalMaterialNotes",
+    "title": "[Bug]: Content Shared to MaterialNotes Displays as JSON",
+    "body": "**Bug Description**  \nIn version v2.0.0-dev1, when sharing content to MaterialNotes, the content is converted into a JSON-like format: `[{\"insert\": xxx}]`. This issue does not occur in v1.12.1.\n\n**To Reproduce**  \nSteps to reproduce the behavior:\n1. Share any content to MaterialNotes.\n\n**Expected Behavior**  \nThe content should be shared and displayed correctly in MaterialNotes, not in a JSON-like format.\n\n**Screen Recording**  \nhttps://github.com/user-attachments/assets/82871593-cd54-469b-8c7e-14ddd215c0ab\n\n**Smartphone**  \n- Device: generic_x86_64 (Android Studio x86 emulator)  \n- OS: Android 9",
+    "comments": [
+        "Thank you for reporting this and for making very detailed bug reports. In the future, when using pre-release versions, please make the bug reports directly in the corresponding [discussion](https://github.com/maelchiotti/LocalMaterialNotes/discussions/397), so this way issues are only about production (I'll close this one for this reason but I'll fix it before the release of course)."
+    ]
+}

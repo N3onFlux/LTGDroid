@@ -1,0 +1,8 @@
+{
+    "apk_name": "FastAdapter_v2.5.1.apk",
+    "url": "https://github.com/mikepenz/FastAdapter/issues/394",
+    "repo": "FastAdapter",
+    "title": "GenericItem crashes in app sample",
+    "body": "In v2.5.1 of the sample on the play store, clicking the genericItem sample closes the app.\r\n\r\n```NullPointerException: Attempt to invoke virtual method 'void android.content.res.TypedArray.recycle()' on a null object reference```\r\n\r\nline 69",
+    "comments": []
+}

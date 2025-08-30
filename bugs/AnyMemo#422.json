@@ -1,0 +1,11 @@
+{
+    "apk_name": "AnyMemo_v10.9.922.apk",
+    "url": "https://github.com/helloworld1/AnyMemo/issues/422",
+    "repo": "AnyMemo",
+    "title": "Application crash after rotating screen",
+    "body": "Steps to reproduce:\r\n* Auto-rotate feature is enabled in system\r\n* Start learning process in AnyMemo\r\n* When question is visible, rotate screen\r\n* Error message: \"Unfortunately, AnyMemo has stopped.\"\r\n\r\nVersions:\r\n* AnyMemo 10.9.922 (F-Droid build)\r\n* CyanogenMod 13.0-20161219-NIGHTLY-m7\r\n",
+    "comments": [
+        "Thank you for reporting. I can repo the issue. I will look into it soon.",
+        "The issue is fixed in commit 3eb738ac52144fe7b50e16d24a6bed60aaeda51c.\r\nClosing this issue. Please let me know if it still happens and reopen the issue. Thanks!"
+    ]
+}

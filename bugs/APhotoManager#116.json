@@ -1,0 +1,12 @@
+{
+    "apk_name": "APhotoManager_v0.6.4.180314.apk",
+    "url": "https://github.com/k3b/APhotoManager/issues/116",
+    "repo": "APhotoManager",
+    "title": "App Crashes While click on the settings option. ",
+    "body": "\n#### Expected behavior\nThe App should be able to open the settings. \n\n#### Actual behavior\nWhen we click on settings option app Crashes and we are not able to open the settings. \n\n\n#### How to reproduce\n\n+ Launch the app. \n\n+ Click on the menu at the top of the right corner of the app you see different options there. \n\n+ Click on settings, app Crashes and you are not able to open the settings. \n\n* Application : A Photo Manager. Version :0.6.4.180314\n* Operating system: Android Nought (7.0)\n\n\n#### Recording Of The Bug\n\nhttps://youtu.be/T5hKhGOzV4A    \n\n<br /><hr/><em>Posted on <a href=\"https://utopian.io/utopian-io/@wanizubair/app-crashes-while-click-on-the-settings-option\">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/>",
+    "comments": [
+        "... fixing problem...",
+        "Fixed in next f-droid hotfix release v0.6.4.180321",
+        "Soved in bugfix release"
+    ]
+}

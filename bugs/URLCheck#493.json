@@ -1,0 +1,13 @@
+{
+    "apk_name": "URLCheck_v3.4.apk",
+    "url": "https://github.com/TrianguloY/URLCheck/issues/493",
+    "repo": "URLCheck",
+    "title": "Crash when using HTTP URL for webhook",
+    "body": "### Steps to reproduce\n\n1. In Modules, open Webhook\n2. In \"Webhook URL\", add the \"http:\" prefix. Then, choose any Template.\n3. Click on \"Test webhook\"\n\n### Expected behavior\n\nA message saying \"Failed to send webhook\"\n\n### Actual behavior\n\nApp crashes. Logcat shows \n```java.lang.ClassCastException: com.android.okhttp.internal.huc.HttpURLConnectionImpl cannot be cast to javax.net.ssl.HttpsURLConnection```\n\n### URLCheck version\n\n3.4\n\n### Android version\n\nAndroid 11\n\n### Android Custom/Specific ROM or Device\n\nSamsung Galaxy S10e\n\n### Other details\n\nIn commit bc252d0, I noticed that the webhook module previously called `HttpUtils.performPOSTJSON`, which cast `URLConnection` to `HttpURLConnection`. The Connection wrapper that replaced this method casts to `HttpsURLConnection` instead.\n\n### Acknowledgements\n\n- [x] I have searched the existing issues and this is a new ticket, **NOT** a duplicate or related to another open issue.\n- [x] I have written a short but informative title.\n- [x] I will fill out all of the requested information in this form.",
+    "comments": [
+        "Ugh, your are correct. After the refactor I'm casting everything to https, I missed that. Hopefully it's just a matter of checking and managing both options!\n\nThanks for the report",
+        "Looking at [Connection.java](https://github.com/TrianguloY/URLCheck/blob/afe102022f96c4c472c201ff354969b6820e1c95/app/src/main/java/com/trianguloy/urlchecker/utilities/wrappers/Connection.java), I see that the [HttpsURLConnection](https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection) methods in use are all inherited. Would casting instead to its superclass `HttpURLConnection` suffice?",
+        "That seems to be the case!\n\nYou want to create a pr with the change yourself?",
+        "Sure, I'm on it"
+    ]
+}

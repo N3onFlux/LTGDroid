@@ -1,0 +1,12 @@
+{
+    "apk_name": "osmdroid_v6.0.1.apk",
+    "url": "https://github.com/osmdroid/osmdroid/issues/1030",
+    "repo": "osmdroid",
+    "title": "The app stops and forces to exit when opening some features",
+    "body": "Please note: issues related to or caused by osmbonuspack will be closed with a\r\nsuggestion to open an issue at https://github.com/MKergall/osmbonuspack\r\n\r\n(feel free to delete whatever doesn't apply)\r\n\r\n## Issue Type\r\nWhen I access the \"More Samples\" feature in the app and open the \"Layout\" section and click on the \"Map in aview pager\", the application suddenly refused to  run  and then the app becomes not responding so it asks to exit forcibly. And the same thing happened when I clicked on \"Map in recycler / cardview layout\".\r\n[ ] Bug\r\n\r\n\r\n## Description and/or steps/code to reproduce the problem\r\nInstall and open the app\r\nthen click \"More Samples\" and click on \"Layout\"\r\nNext click on the \"Map in a view Pager\" feature and also \"Map in a recycler / cardview Layout\"\r\nThen you will find the error as I experienced.\r\n\r\n\r\n## Environment\r\nDevice: Xiaomi Redmi 4X\r\nOperating system: Marshmallow, 6.0.1 mmb29m (CPU: Octa-core Max 1.9 GHz, RAM: 2 GB)\r\nApplication Version: 6.0.1\r\n\r\nhttps://youtu.be/00JaNXery5E",
+    "comments": [
+        "@tykees Similar to #1033.\r\nFixed by PR #1034: could you try it?",
+        "fixed in the next release, snapshots updated",
+        "Thank you for your quick response, i don't have building tools on my PC and i won't be able to check it but i will check it once version 6.0.2 has officially been released\r\n"
+    ]
+}

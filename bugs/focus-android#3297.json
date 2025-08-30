@@ -1,0 +1,10 @@
+{
+    "apk_name": "focus-android_v7.0-B1-aarch64.apk",
+    "url": "https://github.com/mozilla-mobile/focus-android/issues/3297",
+    "repo": "focus-android",
+    "title": "No return path after tapping on ℹ️ while adding a custom search engine",
+    "body": "## Steps to reproduce\r\n1. Open Settings > Search > Installed search engines > + Add another search engine\r\n2. Add a name \"Test\"\r\n3. Optionally, type anything for the Search string\r\n4. Tap on the ℹ️ in the top-right\r\n5. A SUMO page opens\r\n6. Press back\r\n\r\n### Expected behavior\r\nI am back to where I left off while adding a search engine\r\n\r\n### Actual behavior\r\nDropped to the main page, custom search form data is lost\r\n\r\n### Device information\r\n\r\n* Android device: Google Pixel, Android 9.0\r\n* Focus version: 7.0 (Build #322461206 🦎 62.0.20180829133835)\r\n",
+    "comments": [
+        "Now that we're launching InfoActivity intents for about and rights we could use that method for this link as well so that there could be a \"back\" path. "
+    ]
+}

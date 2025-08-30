@@ -1,0 +1,13 @@
+{
+    "apk_name": "AndrOBD_v2.0.7.apk",
+    "url": "https://github.com/fr3ts0n/AndrOBD/issues/144",
+    "repo": "AndrOBD",
+    "title": "[Bug] No Activity found in Bitcoin option",
+    "body": "**Describe the bug**\r\nWhen I want to donate the project in the setting page, it shows \"No activity found to handle intent\"\r\n\r\n**To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. Go to settings\r\n2. Click support project (either paypal or bitcoin)\r\n3. Pops up an error message \"No activity found to handle intent\"\r\n\r\nI am not sure if I explained the reproduce steps clearly. So I made a bug gif as follows:\r\n![1](https://user-images.githubusercontent.com/83440203/116645357-40b2ed80-a9a8-11eb-8440-1c52d91189cf.gif)\r\n\r\n**Expected behavior**\r\nA paypal or bitcoin donating page should be displayed.\r\n\r\n**Important details on your environment:**\r\n- Android OS version: Nexus 5X API 24\r\n- AndrOBD version: 2.0.7\r\n\r\n",
+    "comments": [
+        "The link / intent ist supposed to start your bitcoin wallet app.\r\nYou will get this message only if you have NO bitcoin wallet installed on your device.\r\n",
+        "Which means, that someone who would donate, can't donate it if they can't see the address.\r\nThe Bitcoin option should at least show the bitcoin address so users can see/copy what address to donate to... or else it's the only option if you have the wallet app installed.\r\nOr have a drop-down menu on Bitcoin option that displays the number or other options, like See number, copy number...\r\nOr Instead of nothing, show a text \"No Bitcoin Wallet installed\", so here's the Address: ... ... ... ...\r\nCurrently in my opinion this is not a good app behaviour.\r\n\r\n @imaryandokani does your app literary flash white like in GIF ?",
+        "The thing is that this setting just plainly triggers a intent to open a URL (in this case a bitcoin://... URL)\r\nThis kind of intent does not have any specific error handling to be specified.\r\n\r\nWhat I did now is:\r\n- I added the plain text URL as descriptive text to these settings items, so it is at least readable from the settings.",
+        "Test version: V2.3.2\r\nhttps://t.me/AndrOBD_dev/234"
+    ]
+}

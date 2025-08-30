@@ -1,0 +1,11 @@
+{
+    "apk_name": "AnyMemo_v10.10.1.apk",
+    "url": "https://github.com/helloworld1/AnyMemo/issues/440",
+    "repo": "AnyMemo",
+    "title": "Pressing Paint in Quiz mode crashes the app every time",
+    "body": "No idea why, but it happens every time:\r\n\r\n- tap More on any database (e.g. french-body-parts.db)\r\n- select Quiz\r\n- select some cards and press Start\r\n- select Paint in menu\r\n- crash\r\n\r\nPaint works fine from Study mode (although I didn't see any way to clear the screen). App version: 10.10.1.",
+    "comments": [
+        "Thank you for reporting the bug. I am able to reproduce the crash. I will fix it. \r\nThere is a way to clear the screen, you can click the right of the top bar. There is a hidden tap target on the upper right of the screen. It must be a bug with the icon. I will also fix it.",
+        "The paint crash was fixed in commit e328ca8ffc7c8d076544208116795b3c98f6d4b1 and dfb95080eaaf67055c9e5182be3e99260a56eaab"
+    ]
+}

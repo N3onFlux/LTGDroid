@@ -1,0 +1,11 @@
+{
+    "apk_name": "mhabit_v1.16.7+74arm64.apk",
+    "url": "https://github.com/FriesI23/mhabit/issues/270",
+    "repo": "mhabit",
+    "title": "[BUG]: Habit not removed from list immediately after deletion",
+    "body": "**Description**\nWhen deleting a habit, the item does not immediately disappear from the habit list. It remains visible until the list is manually refreshed or revisited.\n\n**Step to Reproduce**\n\n1. Add any habit.\n2. Delete the habit.\n3. Observe that the deleted habit is still visible in the list until manually refreshed.\n\n**Expected Behavior**\nThe deleted habit should be removed from the list immediately without requiring manual refresh.\n\n**Screenshots**\nhttps://github.com/user-attachments/assets/140a4c48-25e4-4c7f-83d5-3d62d28e0acb\n\n**Device/Environment Info**\n* Device: generic\\_x86\\_64 (Android Studio x86 emulator)\n* OS: Android 9.0 (Default Android System Image)\n* Version: v1.16.7+74\n",
+    "comments": [
+        "![](https://github.trello.services/images/mini-trello-icon.png) [Habit not removed from list immediately after deletion.](https://trello.com/c/KHugMVtx/108-habit-not-removed-from-list-immediately-after-deletion)",
+        "Thank you for identifying this issue. We'll look into it promptly."
+    ]
+}

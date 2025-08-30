@@ -1,0 +1,8 @@
+{
+    "apk_name": "MaterialFiles_v1.7.4.apk",
+    "url": "https://github.com/zhanghai/MaterialFiles/issues/1281",
+    "repo": "MaterialFiles",
+    "title": "When switching to Arabic, the alignment of text in zip file format options can cause confusion.",
+    "body": "When switching to Arabic, the failure to adjust the alignment of the text can cause confusion with the options.\r\n\r\n<img width=\"204\" alt=\"image\" src=\"https://github.com/user-attachments/assets/ea24f8dd-243a-436c-a403-b86b6d877e3a\">\r\n",
+    "comments": []
+}

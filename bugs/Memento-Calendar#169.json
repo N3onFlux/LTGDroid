@@ -1,0 +1,11 @@
+{
+    "apk_name": "Memento-Calendar_v3.6.apk",
+    "url": "https://github.com/alexstyl/Memento-Calendar/issues/169",
+    "repo": "Memento-Calendar",
+    "title": "Bug in app calendar which leads app to crash. ",
+    "body": "#### Expected behaviour\nWhile creating a contact in app, app gives option to select birth date of contact. When selecting birth date from date picker, app needs to show 28 days in February month because 2018 is not a leap year.\n\n#### Actual behaviour\nWhile selecting birth date from date picker, the date picker showing me 30 Feb 2018 as a date. When i set 30 Feb 2018 as birthday of contact, the app got crashed.\n![Screenshot_20180228-163225.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519815934/b11xddgz2esuoqflijnk.png)\n\n\n#### How to reproduce\nTo reproduce the bug follow the following steps :-\n- Create a new contact from app.\n- Click on birthday field and set 30 Feb 2018 as birthday date.\n- App crashed immediately.\n- For better understanding see recording of bug.\n\n<pre><code>\n* Device:  Samsung J7 Prime\n* Operating system: Android 7.0 Nougatt\n* App Version: v11.2\n</code></pre>\n\n#### Recording Of The Bug\n#### watch video till end.\nhttps://youtu.be/BN-NH2l4sAg\n    \n\n<br /><hr/><em>Posted on <a href=\"https://utopian.io/utopian-io/@iamankit/bug-in-app-calendar-which-leads-app-to-crash\">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/>",
+    "comments": [
+        "I tried it and it happened.\r\nMy steps:\r\nCreate a new contact by click the '+'.\r\nClick the birthday and disabled 'include year'\r\nSlide the month to March and slide the day to 31 but don't click the set.\r\nThen slide the month to February.\r\nClick the set.\r\n",
+        "Fixed by @madlymad in #180 "
+    ]
+}

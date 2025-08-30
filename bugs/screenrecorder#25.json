@@ -1,0 +1,14 @@
+{
+    "apk_name": "screenrecorder_v1.8.2.apk",
+    "url": "https://github.com/vijai1996/screenrecorder/issues/25",
+    "repo": "screenrecorder",
+    "title": "App stops after opening \"about\" twice",
+    "body": "Open App\r\nSelect about \r\nGo back\r\nSelect about \r\n\r\n[https://www.youtube.com/watch?v=moB_sK--ZcU](https://www.youtube.com/watch?v=moB_sK--ZcU)\r\n",
+    "comments": [
+        "if i build the apk with android studio 2.2.3, i can not reproduce the error.\r\n\r\n[app-debug.apk](https://github.com/CBke/screenrecorder/releases/download/49cd398/app-debug.apk)\r\n\r\n",
+        "@CBke good that the latest repo source has no FC. It is the latest version about to be released. I'm resting it at the moment. Will merge translation and make a release soon. Thanks for testing \n\n_Sent from my Huawei Nexus 6P using [FastHub](https://play.google.com/store/apps/details?id=com.fastaccess.github)_",
+        "I'm getting the fault from the build on F-Droid 1.8.1.\r\nOr 49cd398 does not match the [F-Droid apk](https://f-droid.org/repo/com.orpheusdroid.screenrecorder_18.apk).\r\nOr it has something to do with the build options.\r\n\r\nAlso in 1.8.1 i do not get the option \"send error report\" like in 17.2 (google play).\r\nI Have Crash Reporting enabled. ",
+        "I tried to reproduce the bug on 1.8.1 from f-droid but it works perfect for me. It doesnt FC even if I open about more than twice. Probably some other issue? May be reinstall and try again?\r\n\r\nFor the \"send error report\", its not by the app itself but by the Google Play Services. Play services monitor the app installed from play and asks the user to send a error report to the developer's play console if the app crashes. If your source of install is other than play, you wont get that dialog. On the other hand having enabled crash reporting will automatically send the error report in background to the crash analytics platform.",
+        "Closing issue as there is no more update on this"
+    ]
+}

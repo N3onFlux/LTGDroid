@@ -1,0 +1,10 @@
+{
+    "apk_name": "FirefoxLite_v2.1.20.apk",
+    "url": "https://github.com/mozilla-mobile/FirefoxLite/issues/5085",
+    "repo": "FirefoxLite",
+    "title": "Firefox Lite crashes when changing app language",
+    "body": "**Describe the bug**\r\nFirefox Lite crashes when changing language\r\n\r\n**Steps To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. Go to Settings in Firefox Lite\r\n2. Click on Language\r\n3. Change the different language\r\n4. See error \"Unfortunately, Firefox Lite has stopped.\"\r\n\r\n**Expected behavior**\r\nSwitch the system language smoothly.\r\n\r\n**Actual behavior**\r\nCrash\r\n\r\n**Screenshots/videos**\r\nhttps://drive.google.com/file/d/1KWi4rahzzCLVeHwvvpGiVrvkuPw5YXgG/view?usp=sharing\r\n\r\n\r\n**Device info (please complete the following information):**\r\n - Device: Galaxy S6 edge\r\n - OS: Android 6.0.1\r\n - Webview 84.0.4147.37\r\n - Version 2.1.20 (19787)\r\n\r\n**Reproduce rate**\r\n5/5\r\n\r\n**Additional context**\r\nhttps://console.firebase.google.com/u/0/project/zerda-dcf76/crashlytics/app/android:org.mozilla.rocket/issues/c324bf4b1e541feb2600b9ded4439fc9?time=last-seven-days&sessionId=5EDEC5A7030B00015F00FD8F4116BBB8_DNE_0_v2\r\n",
+    "comments": [
+        "verify: ✅\r\nversion : 2.1.21(19798)  Release build \r\n"
+    ]
+}

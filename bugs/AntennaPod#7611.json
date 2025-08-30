@@ -1,0 +1,13 @@
+{
+    "apk_name": "AntennaPod_v3.8.0.apk",
+    "url": "https://github.com/AntennaPod/AntennaPod/issues/7611",
+    "repo": "AntennaPod",
+    "title": "`onPrepareOptionsMenu` not run on first tab switch in statistics",
+    "body": "### Checklist\r\n\r\n- [X] I have used the search function for [**OPEN**](https://github.com/AntennaPod/AntennaPod/issues) issues to see if someone else has already submitted the same bug report.\r\n- [X] I have **also** used the search function for [**CLOSED**](https://github.com/AntennaPod/AntennaPod/issues?q=is%3Aissue+is%3Aclosed) issues to see if the problem is already solved and just waiting to be released.\r\n- [X] I will describe the problem with as much detail as possible.\r\n- [X] If the bug only to occurs with a certain podcast, I will include the URL of that podcast.\r\n\r\n### App version\r\n\r\ncommit 99a6c96\r\n\r\n### Android version\r\n\r\n15\r\n\r\n### Device model\r\n\r\nsdk_gphone64_x86_64 (Emulator in Android Studio)\r\n\r\n### First occurred\r\n\r\nAt least 3.6.1f (8ec7d08e2) onwards, might've been happening longer\r\n\r\n### Steps to reproduce\r\n\r\n1. Open subscriptions tab\r\n2. Open statistics page\r\n3. Select either of the other tabs (Years/Downloads)\r\n\r\n### Expected behaviour\r\n\r\nFilter button disappears, Reset option disappears for downloads tab, stays for years tab.\r\n\r\n### Current behaviour\r\n\r\nFilter button remains, but is non-functional. \"Reset statistics data\" seems to be functional.\r\nAppears to work normally on subsequent tab switches.\r\n\r\nI noticed this on my own phone (FP4 with A13 and latest fdroid release) and replicated with the emulator in Android Studio with latest git (see screen recording)\r\n\r\n[2025-01-15 00:30.webm](https://github.com/user-attachments/assets/6a21aa08-7e9d-4d89-aa98-8abcdab79265)\r\n\r\n\r\n### Logs\r\n\r\n_No response_",
+    "comments": [
+        "will year filter will show same Filter as subscription?",
+        "Is anyone working on it? Otherwise I can take a look",
+        "> will year filter will show same Filter as subscription?\n\nThe filter menu itself does not actually open, only the icon/button remains\n\n> Is anyone working on it? Otherwise I can take a look\n\nAfaik noone is currently working on this, though I don't see behind the scenes ofc",
+        "> Is anyone working on it?\n\nIf there is no comment that someone is working on it, you are welcome to pick it up :)\n\n> Otherwise I can take a look\n\nNote that I'm not sure how easy it is to solve this issue. If you want to get familiar with the AntennaPod code base, it might be better to start with an issue labelled \"good first issue\"."
+    ]
+}

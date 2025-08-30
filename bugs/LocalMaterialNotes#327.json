@@ -1,0 +1,11 @@
+{
+    "apk_name": "LocalMaterialNotes_v1.10.0-dev1arm64.apk",
+    "url": "https://github.com/maelchiotti/LocalMaterialNotes/issues/327",
+    "repo": "LocalMaterialNotes",
+    "title": "(KINDA CRITICAL) the bin doesn't work",
+    "body": "In the latest version (v1.10.0), deleted notes don't go to the bin. I just lost all my notes testing it (I'm dumb and deleted them all + they weren't important)",
+    "comments": [
+        "Also newly created notes are duplicated to the bin, not being deleted from the main screen. It seems like the bin is now just a clone of the main notes storage.",
+        "Thank you very much for reporting this. Silly mistake, I changed some code and used the wrong list of notes in the bin. So your deleted notes are not lost. I'm releasing a fix today."
+    ]
+}

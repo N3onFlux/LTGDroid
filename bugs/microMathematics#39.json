@@ -1,0 +1,14 @@
+{
+    "apk_name": "microMathematics_v2.15.4.apk",
+    "url": "https://github.com/mkulesh/microMathematics/issues/39",
+    "repo": "microMathematics",
+    "title": "NumberFormatException",
+    "body": "When parsing `Siginificant digits in result`, a `NumberFormatException` may be triggered if the input number is very large.\r\n\r\n```\r\n// CRASH: com.mkulesh.micromath.plus (pid 11486) (elapsed nanos: 5755378442858)\r\n// Short Msg: java.lang.NumberFormatException\r\n// Long Msg: java.lang.NumberFormatException: Invalid int: \"1274375155085100044673746644154457\"\r\n// Build Label: Android/sdk_google_phone_x86/generic_x86:6.0/MASTER/4088240:userdebug/test-keys\r\n// Build Changelist: 4088240\r\n// Build Time: 1497047463000\r\n// java.lang.NumberFormatException: Invalid int: \"1274375155085100044673746644154457\"\r\n// \tat java.lang.Integer.invalidInt(Integer.java:138)\r\n// \tat java.lang.Integer.parse(Integer.java:413)\r\n// \tat java.lang.Integer.parseInt(Integer.java:367)\r\n// \tat java.lang.Integer.parseInt(Integer.java:334)\r\n// \tat java.lang.Integer.valueOf(Integer.java:525)\r\n// \tat com.mkulesh.micromath.widgets.HorizontalNumberPicker.onClick(HorizontalNumberPicker.java:111)\r\n// \tat android.view.View.performClick(View.java:5198)\r\n// \tat android.view.View$PerformClick.run(View.java:21147)\r\n// \tat android.os.Handler.handleCallback(Handler.java:739)\r\n// \tat android.os.Handler.dispatchMessage(Handler.java:95)\r\n// \tat android.os.Looper.loop(Looper.java:148)\r\n// \tat android.app.ActivityThread.main(ActivityThread.java:5417)\r\n// \tat java.lang.reflect.Method.invoke(Native Method)\r\n// \tat com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)\r\n// \tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)\r\n// \r\n```\r\n\r\n*How to repeat*:\r\n- Start app\r\n- Open \"Document setting\" dialog\r\n- In the field \"Significant digits in result\", put123456789012.\r\n- Press \"+\" button on the right of this field\r\n*Bad*: crash is observed\r\n*Desired*: field content is set to a maximum allowed value for this element",
+    "comments": [
+        "thanks, I will fix it",
+        "Hi @tianxiaogu, I fixed this crash. Please test and close the issue if it works now",
+        "Hi @mkulesh , thank you for your patch. Unfortunately, the defect is not fully fixed. I think you probably also need to include a try-catch block in method `getValue` of class `HorizontalNumberPicker`.",
+        "Hi @tianxiaogu, thank you for pointing additional case. I fixed it and believe that all cases are covered now.",
+        "Implemented in v2.15.5"
+    ]
+}

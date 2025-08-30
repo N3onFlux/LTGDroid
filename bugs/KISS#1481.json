@@ -1,0 +1,12 @@
+{
+    "apk_name": "KISS_v3.13.5.apk",
+    "url": "https://github.com/Neamar/KISS/issues/1481",
+    "repo": "KISS",
+    "title": "Favorites bar doesn't appear under specific UI settings",
+    "body": "**Describe the bug**\r\nAfter updating to a newer version of KISS launcher, I am no longer able to make the shortcut bar appear. The cause seems to be the \"Hide favorites bar initially\" setting. When enabled, the favorites bar will not appear when I try to tap on the screen. When disabled, the favorites bar will stay present and not disappear until the search bar or the KISS button is pressed.\r\n\r\n**To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. Set an app as a favorite.\r\n2. Enable \"Show favorites above search bar\" under Favorites settings.\r\n3. Enable Minimalistic UI under User experience.\r\n4. Enable \"Hide favorites bar initially\" under Minimalistic UI.\r\n5. Check home screen to see there is no favorites bar, even after tapping the screen.\r\n\r\n**Expected behavior**\r\nPreviously, I had set up KISS launcher to display my favorites bar when I tapped anywhere on the main screen. Now, I can't make the favorites bar appear at all without changing my settings. \r\n\r\n**Additional information**\r\n - App version: 3.13.5\r\n - App installed via: F-Droid",
+    "comments": [
+        "Can reproduce, show history on touch _needs to be disabled_, otherwise it works correctly?\r\n\r\nI'm not sure if this was changed recently?",
+        "Yes, this was changed recently, to fix an issue when displaying all apps.\r\n\r\nThe \"hide favorites bar initially\" is actually dependent on \"Show history on touch\", so you can hide it from the main view but to display it on touch you also need to display history.\r\n\r\nAt least for now. Changing it is fairly hard, I'll see what I can do, but no promise.",
+        "Sent a fix ;)"
+    ]
+}

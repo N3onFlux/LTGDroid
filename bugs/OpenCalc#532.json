@@ -1,0 +1,11 @@
+{
+    "apk_name": "OpenCalc_v3.1.4.apk",
+    "url": "https://github.com/clementwzk/OpenCalc/issues/532",
+    "repo": "OpenCalc",
+    "title": "Crashes on changing operator from factorial to some other one.",
+    "body": "**To Reproduce**\n\n1. Start OpenCalc\n2. Enter, for example, \"1 ! %\"\n\n**Expected behavior**\n\nIt may replace \"!\" with \"%\" or interpret it is `(1!)%` or show \"Invalid syntax\"\n\n**Actual behavior**\n\nCrash.\n\n**Smartphone (please complete the following information):**\n - Device: Pixel 3 XL\n - OS: Android 12\n - App version: 3.1.4 (F-Droid)\n - Language: English\n",
+    "comments": [
+        "Confirmed bug.",
+        "This is weird"
+    ]
+}

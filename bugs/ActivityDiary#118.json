@@ -1,0 +1,10 @@
+{
+    "apk_name": "ActivityDiary_v1.1.8.apk",
+    "url": "https://github.com/ramack/ActivityDiary/issues/118",
+    "repo": "ActivityDiary",
+    "title": "Deleting a pics in an activity works on another activity.",
+    "body": "\n#### Expected behavior\nPics should be deleted from the activity clicked on.\n\n#### Actual behavior\nThe pics doesn't delete on that particular activity, the delete works on pics in another activity at the top.\n\n#### How to reproduce\nDownload app from fdroid.<br>\nOpen and select an activity, then add a pics to it.<br>\nDo the same for another activity.<br>\nOpen the side menu and go to diary.<br>\nDelete the pics attached to the former activity which would be below<br>\nNotice the pics doesn't shows it's deleted,\nbut the latter one goes off as deleted. <br>\n\n* App: Activity diary.     Fdroid store. Version 1.1.8\n* Operating system: Android Nougat 7.0 on Tecno K7.\n\n#### Recording Of The Bug\n(https://youtu.be/yadELlLY6sU)\n   \n\n<br /><hr/><em>Posted on <a href=\"https://utopian.io/utopian-io/@mcyusuf/deleting-a-pics-in-an-activity-works-on-another-activity\">Utopian.io -  Rewarding Open Source Contributors</a></em><hr/>",
+    "comments": [
+        "OMG. Thanks for reporting. This is actually a heavy bug - will fix i for the next release."
+    ]
+}

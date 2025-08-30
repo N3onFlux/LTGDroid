@@ -1,0 +1,12 @@
+{
+    "apk_name": "OpenCalc_v3.1.0-beta1.apk",
+    "url": "https://github.com/clementwzk/OpenCalc/issues/510",
+    "repo": "OpenCalc",
+    "title": "1+2)×3 gives wrong result",
+    "body": "**Describe the bug**\r\n1+2)×3 gives wrong result. This error really caught me off guard.\r\n\r\n**Smartphone:**\r\n - Device: Samsung Galaxy A52 5g\r\n - OS: Android 14\r\n - App version 3.0.1",
+    "comments": [
+        "Typing this in exactly via pc keyboard does result in an error that should not be possible using device screen input. Will investigate. Please provide more detail.",
+        "I used the on-screen keyboard, but I typed 1+2*3 first and then added the parenthesis.",
+        "Got it. This is a previously uncaught parenthesis entry issue.  Will investigate and correct ASAP."
+    ]
+}

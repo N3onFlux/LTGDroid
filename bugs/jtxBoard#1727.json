@@ -1,0 +1,10 @@
+{
+    "apk_name": "jtxBoard_v2.12.0.apk",
+    "url": "https://github.com/TechbeeAT/jtxBoard/issues/1727",
+    "repo": "jtxBoard",
+    "title": "[BUG] crash on new note save with markdown code image url",
+    "body": "**Describe the bug**\nSpecific markdown crashes the app\n\n**To Reproduce**\n Steps to reproduce the behavior:\n1. Go to notes\n2. Click on new note\n3. Paste in the description\n```\nImage\n\n![](https://jtx.techbee.at/wp-content/uploads/2022/02/Markdown-930x620.jpg)\n\n\n```\n5. Click save\n**Expected behavior**\nNote saved without crash even if the markdown syntax is incorrect\n\n**Screenshots**\n\n\n**Device and version**\n - Device: poco x3 nfc\n - Android version: Android 14\n - jtx Board version: 2.10.00.ose\n - Downloaded from: f-droid\n",
+    "comments": [
+        "Thanks @joao-matos , this is a problem in the underlying library, I've opened a bug report. \n\nDepends on https://github.com/ArnyminerZ/MarkdownText/issues/155"
+    ]
+}

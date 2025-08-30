@@ -1,0 +1,10 @@
+{
+    "apk_name": "OpenCalc_v3.1.0-beta1.apk",
+    "url": "https://github.com/clementwzk/OpenCalc/issues/448",
+    "repo": "OpenCalc",
+    "title": "Erroneous values when using percentage on operation encased in parentheses ",
+    "body": "**Describe the bug**\r\nWhen using percentage on an operation done between parentheses, the value comes out incorrect. I tried the same operation on multiple calculators and they all give the same answer but on this calculator.\r\n\r\n**To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. Click on \"(\"\r\n2. Click on \"5\"\r\n3. Click on \"4\"\r\n4. Click on \")\"\r\n5. Click on \"%\"\r\n6. Observe error.\r\n\r\n**Expected behavior**\r\nThe operation (5+4)% should display 0.09.\r\n\r\n**Screenshots/videos**\r\n![bugincalc](https://github.com/Darkempire78/OpenCalc/assets/101996937/3c07bf0a-9173-48bc-9141-a207c88c6d4f)\r\n\r\n**Smartphone (please complete the following information):**\r\n - Device: Pixel_3a_API_34_extension_level_7_arm64-v8a\r\n - OS: Android 14.0\r\n - App version: latest\r\n - Language [e.g English]\r\n",
+    "comments": [
+        "fixed in #507 "
+    ]
+}

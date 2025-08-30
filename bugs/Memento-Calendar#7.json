@@ -1,0 +1,11 @@
+{
+    "apk_name": "Memento-Calendar_v3.6.apk",
+    "url": "https://github.com/alexstyl/Memento-Calendar/issues/7",
+    "repo": "Memento-Calendar",
+    "title": "Select Date Dialog",
+    "body": "#### Short Description\n\nCheck/Uncheck checkbox on New Birthday date\n##### Steps to reproduce\n1. Press Add button\n2. Press EditText Birthday\n3. Uncheck the Checkbox \"Birthday Year\"\n4. Press Finish\n5. Press EditText Birthday Again\n6. I see Birthday Year List but Checkbox is unchecked\n##### Expected Results\n\nCheckbox \"Bithday Year\" Checked\n##### Video/Screenshots\n\n![ezgif com-video-to-gif](https://cloud.githubusercontent.com/assets/4539769/18091925/1afde744-6ed3-11e6-839d-a920df679515.gif)\n",
+    "comments": [
+        "Good catch. Thanks for the report 👍\n\nSome smaller resolution would be nicer next time\n",
+        "This issue is now fixed and will be available in the next release\n"
+    ]
+}

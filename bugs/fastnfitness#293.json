@@ -1,0 +1,8 @@
+{
+    "apk_name": "fastnfitness_v0.20.6.apk",
+    "url": "https://github.com/brodeurlv/fastnfitness/issues/293",
+    "repo": "fastnfitness",
+    "title": "Quotation marks in exercise crash app",
+    "body": "Hello, \nI noticed that the app doesn't like it when you use a double quote inside the name of an exercise.\nThanks\n\nSteps to reproduce the behavior:\n1. Create a exercise with a name containing a double quote\n2. Try to open the context menu of that exercise\n\nThe app immediately crashes.\n\nAndroid Version: 13\nFast N Fitness Version: 0.20.6\n",
+    "comments": []
+}

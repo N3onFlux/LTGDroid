@@ -1,0 +1,17 @@
+{
+    "apk_name": "markor_v1.1.0.apk",
+    "url": "https://github.com/gsantner/markor/issues/331",
+    "repo": "markor",
+    "title": "Save button makes the file not save",
+    "body": "#### General information\r\n\r\n* **App version:** 1.1.0 Google Play Store\r\n* **System:** Android 8.0.0 Sony XZ2 Compact\r\n\r\n#### Description\r\nSteps to reproduce the bug:\r\n1. Press + to create a new note.\r\n2. Enter title and some content\r\n3. Wait for the save icon to be enabled (it is grayed out at start)\r\n4. Press save icon\r\n5. Press the back arrow from top\r\n6. Note is NOT created\r\n\r\nThe note creation works if I **skip** steps 3 and 4 and only just press the back arrow. If I wait then the note is not created.\r\n\r\n",
+    "comments": [
+        "Same bug. I also notice that if I edit a note with new content, it won't be saved, even if I press the save icon.\r\n\r\nSystem version: LineageOS 14.1 (Android 7.1.2).",
+        "Tried this out and I can only tell that auto save works fine. But it seems like, if the user presses save icon manually at a new document it will not be saved.\r\n\r\nLooks like there is a problem in the document filename detection algorithm. Don't use the save button  for now please, auto save is still implemented, you don't need the save button.",
+        "The whole dynamic filename logic (when adding new document, writing text on titlebar) is very big and at same time hard to work on. I will make soon what I wanted to make for quite some time:\r\n* To make the \"+\"=new button popup a dialog to enter filename and the type (markdown/plaintext/todo.txt\r\n* Directly renaming of filenames only, on accept press, no more file moving at \"auto-save\" time.",
+        "just started using this app a few days ago and I didn't know what was going on with that save button but pressing the preview button before you exit seems to save so I've been using that instead :)  ",
+        "@gsantner I suggest to release quickly a new version that removes temporarily the save button, because I think there are a lot of users that are trapped on this bug.\r\n\r\nAlso I can suggest to create a beta version to allow some voluntary users to test Markor, before the new version is relased on FDroid and Google Play. Bugs like this could be easily detected.",
+        "It seems auto-save is not working well neither:\r\n\r\n1. I created a note like this\r\n\r\n    ```\r\n    some text\r\n    ```\r\n\r\n1. Then I added more content\r\n\r\n    ```\r\n    some text\r\n    new content\r\n    ```\r\n\r\n1. Pressed `back` and opened note again, result was:\r\n\r\n    ```\r\n    some text\r\n    ```\r\n\r\nThis happened various times, and the content was lost ",
+        "I'm activating history/undo/redo again. seems like the point were it was default-disabled it makes problem on some devices.\nI myself tried it multiple/many times now but didn't loose any single character on 1.1.1",
+        "Got email response from some users which told me (auto-)save works fine again now with v1.1.2, so install the fix, or use the `preview` workaround if you are using F-Droid binary."
+    ]
+}
