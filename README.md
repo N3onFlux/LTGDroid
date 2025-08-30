@@ -39,20 +39,23 @@ LTGDroid
 
 ## Installation
 
-- Clone this repository:
+### Clone repository
+
 ```bash
 git clone https://github.com/N3onFlux/LTGDroid.git
 cd LTGDroid
 ```
 
-- Install the required Python packages by [Poetry](https://python-poetry.org/):
+### Install the required Python packages by [Poetry](https://python-poetry.org/):
+
 ```bash
 poetry install
 ```
 
 ##  Usage
 
-- Provide LLM API keys in `env.json` file: 
+### Provide LLM API keys in `env.json` file
+
 ```json lines
 {
   "llm_service": "openai",
@@ -66,10 +69,11 @@ poetry install
 }
 ```
 
-- Ensure that both adb and emulator commands are available and properly configured in your system's environment PATH. These tools are essential for interacting with the Android Debug Bridge (ADB) and controlling the Android Emulator, respectively.
+### Ensure Proper Configuration of ADB and Emulator Commands
 
-- Run LTGDroid on a target bug report:
+Make sure that both `adb` and `emulator` commands are available and properly configured in your system's environment PATH. These tools are essential for interacting with the Android Debug Bridge (ADB) and controlling the Android Emulator, respectively.
 
+### Run LTGDroid on a target bug report
 
 ```bash
 python main.py -avd_name Avd_0 -avd_port 5554 -bug_name Anki-Android#5753 -apk_name Anki-Android_v2.9.1.apk -max_transition 100 -max_step 30 -llm_first_branch_limit 6 -llm_second_branch_limit 3
@@ -87,7 +91,7 @@ Here,
 * `-llm_second_branch_limit`: Maximum number of exploration paths retained by the Path Evaluator after each iteration (corresponding to `threshold_k`).
 
 
-- Start LTGDroid visualization tool
+### Start LTGDroid visualization tool
 
 To start the LTGDroid visualization tool, run the following command:
 
